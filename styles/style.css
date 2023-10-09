@@ -67,14 +67,6 @@
     letter-spacing: 30px;
 }
 
-.letter-spacing-extended {
-    letter-spacing: 60px;
-}
-
-.no-letter-spacing {
-    letter-spacing: normal;
-}
-
 .aligned-text,
 .aligned-text_center,
 .aligned-text_right {
@@ -87,6 +79,14 @@
 
 .aligned-text_right {
     text-align: right;
+}
+
+.letter-spacing-extended {
+    letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+    letter-spacing: normal;
 }
 
 .cover__description {
@@ -135,7 +135,7 @@
 }
 
 .lots__card-list-item {
-    flex-basis:430px;
+    flex-basis: 430px;
     flex-grow: 1;
     list-style: none;
     width: 100%;
@@ -173,18 +173,91 @@
     background-image: url(../images/card-lot-03.jpg);
 }
 
-.card__title{
+.card__title {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 120%;
 }
 
-.card__title-text{
+.card__title-text {
     text-decoration: underline;
 }
 
 .lots__look-more-link {
     justify-self: start;
     margin: 30px 0 0 40px;
+}
+
+.about {
+    display: grid;
+    grid-template: auto auto / 1fr 1fr 1fr;
+    gap: 8px 25px;
+    max-width: 1340px;
+    margin: auto;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.about__logo-image {
+    width: 148px;
+}
+
+.about__title {
+    align-self: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.about__text {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    grid-column: 2 / 4;
+    font-size: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    max-width: 1340px;
+}
+
+.footer_margin-main {
+    margin: 180px auto 90px;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer__menu {
+    align-self: start;
+    text-align: center;
+}
+
+.footer__menu-link_active {
+    text-decoration: none;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: 48px;
+    align-self: start;
+    justify-content: flex-end;
+}
+
+.footer__social-icon {
+    width: 48px;
 }
